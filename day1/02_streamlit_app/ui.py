@@ -41,7 +41,7 @@ def display_chat_page(pipe):
     if st.session_state.current_question and st.session_state.current_answer:
         st.subheader("こんな感じ？")
         st.markdown(st.session_state.current_answer) # Markdownで表示
-        st.info(f"応答時間: {st.session_state.response_time:.2f}秒")
+        st.info(f"かかった時間: {st.session_state.response_time:.2f}秒")
 
         # フィードバックフォームを表示 (まだフィードバックされていない場合)
         if not st.session_state.feedback_given:
